@@ -1,28 +1,28 @@
-# Deprecated!
-This project is deprecated! Use our other proxy [Corrosion](https://github.com/titaniumnetwork-dev/corrosion) instead!
-
 # Alloy Proxy
 A web proxy for use in combating web filters.
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/titaniumnetwork-dev/alloy/tree/master)
+
+this is a modifide vershion of alloy that i made to use in my school it pritends to be schoology and it has a thing to prevent smart ass's from looking at your screen for the url
+
 
 ## Running locally
 
 ```sh
 git clone https://github.com/titaniumnetwork-dev/alloyproxy.git
 cd alloyproxy
-node server.js
+npm start
 ```
 
 
 ## Options in config.json
 ```json
 {
-    "port": "8080",
+    "port": "80",
     "ssl": false,
     "prefix": "/web/",
     "localAddresses": [],
-    "blockedHostnames": []
+    "blockedHostnames": ["192.168.1.254"]
 }
 ```
 
